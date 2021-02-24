@@ -1,0 +1,400 @@
+/* ########################
+Template Name: STRICT || HTML Template;
+Authore: Md.Sobuj Sarkar;
+Version: 1.0.0;
+Created: 25  February 2021;
+File Description: Main CSS file of the template;
+################################################### */
+
+/* ########################
+01. General
+################################################### */ 
+
+/* ########################
+Typography
+################################################### */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family:'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,h3,
+h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #2d3950;
+    margin: 0;
+    padding: 0;   
+}
+h2{
+    font-size: 40px;
+}
+h4{
+    font-size: 22px;
+}
+p{  
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px; 
+    color: #999999;
+    margin: 0; 
+    padding: 0;   
+}
+a{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2d3950;
+    text-decoration: none;    
+}
+/* ########################
+HEADER STYLE START HERE
+################################################### */
+header{
+    background-color: #f6f9f9;
+    padding: 32px 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{ 
+    width: 30%;
+}
+.navigation-menu{
+    width: 70%;
+}
+nav ul{ 
+    display: flex; 
+    justify-content: flex-end;
+}
+nav ul li{
+    list-style: none;}
+nav ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 27px;
+    text-transform:uppercase;
+}
+nav ul li:last-child a{
+    padding-right: 0;
+}
+nav ul li a:hover{
+    color: #15a4fa;
+    transition: .3s ease-in-out;
+}
+/* ########################
+BANNER STYLE START HERE
+################################################### */
+#banner{
+    background-image: url(../images/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    text-align: center;
+
+}
+.banner-content h2{
+    font-size: 120px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.banner-content p{
+    color: #ffffff;
+    padding: 35px 0;
+}
+.banner-content button{
+  font-size: 18px;
+  height: 60px;
+  width: 175px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid#15a4fa ;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.banner-content button:hover{
+ background-color: #15a4fa ;
+ color: #2d3950;
+ transition: .3s ease-in-out;
+
+}
+.banner-content button:focus{
+    outline: none;
+}
+.banner-icon a{
+    color:#fff;
+    font-size: 50px;
+    position: relative;
+    top: 160px;
+    animation-name: move;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes move{
+0%   {top:0px;}
+
+
+100%  {top:160px;}
+}
+
+/* ########################
+BANNER STYLE START HERE
+################################################### */
+
+#services{
+    padding: 70px 0;
+    background-color: #f6f9f9;
+}
+.service-content{
+    text-align: center;
+}
+.service-content h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+}
+.service-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 30px;
+    padding:40px 0;
+}
+#service-item{
+    padding:65px 0 ;
+}
+.service-item{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item .item-one{
+    width:30% ;
+    text-align: center;
+}
+.service-item .item-one .icon{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 50px;
+    color: #fff;
+    line-height: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+}
+.service-item .item-one h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: #2d3950;
+    margin: 10px 0;  
+}
+.service-item .item-one p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;}
+
+.service-item .item-two{
+    width: 30%;
+    text-align: center;
+}
+.service-item .item-two .icon{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 50px;
+    color: #fff;
+    line-height: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+}
+.service-item .item-two h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: #2d3950;
+    margin: 10px 0;  
+}
+.service-item .item-two p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;}
+
+
+.service-item .item-three{
+    width: 30%;
+    text-align: center;}
+    .service-item .item-three .icon{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        font-size: 50px;
+        color: #fff;
+        line-height: 100px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    }
+    .service-item .item-three h4{
+        font-size: 22px;
+        font-weight: 400;
+        color: #2d3950;
+        margin: 10px 0;  
+    }
+    .service-item .item-three p{
+        font-size: 15px;
+        font-weight: 400;
+        color: #999999;}
+    
+/* ########################
+works STYLE START HERE
+################################################### */
+#works{
+    padding: 80px 0;
+    background-color: #f6f9f9;
+}
+.work-content{
+    text-align: center;
+}
+.work-content h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+}
+.work-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    padding:25px 0;}
+
+#works-item{
+    background-color: #f6f9f9;
+    padding-bottom: 5px;
+}
+.work-item{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+.work-item .item-one{
+        width:30% ;
+        text-align: center;
+    }
+.work-item .item-two{
+        width:30% ;
+        text-align: center;
+    }
+.work-item .item-three{
+        width:30% ;
+        text-align: center;
+    }
+
+.work-item .item-four{
+        width:30% ;
+        text-align: center;
+    }
+.work-item .item-five{
+        width:30% ;
+        text-align: center;
+    }
+.work-item .item-six{
+        width:30% ;
+        text-align: center;
+    }
+/* ########################
+FORM STYLE START HERE
+################################################### */
+#form{
+    background-image: url(../images/Newsletter-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color:#2b364b ;
+    display: flex;
+    flex-direction: column;
+}
+.form-content{
+    text-align: center;
+}
+.form-content h2{
+    font-size: 41px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 80px;
+}
+.form-content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+}
+.form-form{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+input { width: 90%;
+      background-color: transparent;
+      margin: 10px 0;
+      padding: 15px;
+      border:1px solid #999999 ;
+      transition: .3s ease-in-out;
+      cursor: pointer;  
+}
+input:focus{
+    outline: none;
+
+}
+input:hover{
+    background-color: #15a4fa;
+    color: #ffffff;
+}
+input[type=submit] {width: 30%;
+    background-color: transparent;
+    padding:10px;  
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    border: 1px solid #999999;
+}
+input[type=submit]:focus{
+    outline:none;
+}
+input[type=submit]:hover{
+    background-color: #15a4fa;
+}
+}
+
